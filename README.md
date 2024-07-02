@@ -1,6 +1,4 @@
-#################################################################################################
 # dolphin_event_combiner v1.0
-#################################################################################################
 Dolphin Version: 5.0.19.0
 Meet Maestro:	 8.15.7
 
@@ -15,25 +13,26 @@ times then we will have a data file with times for lanes 1, 2, 3 and 4. If we im
 into Meet Maestro for both the girls event AND the boys event then the appropriate times will
 be populated.
 
-#################################################################################################
 # Usage
-#################################################################################################
 TODO: fill in actual steps to use
 
 parameters:
 -d | --directory: Dolphin data directory
 
-#################################################################################################
 # Dev notes
-#################################################################################################
 CurrentDolphinRace.txt contents:
 
 6/30/2024 4:41:34 PM,6,5.0.19.0,2,2,1,2
 <last update date> <last update time> <meet number> <dolphin version> <event> <event> <heat> <race>
 
-#################################################################################################
+Test usage:
+
+C:\Users\test\dolphin_event_combiner>python combine.py  --directory test_event/
+Using directory at 'test_event//'
+Using current race '006_Event_15_Heat_3_Race_6_6_30_2024_17_49.csv'
+Generating next race '006_Event_15_Heat_4_Race_7_6_30_2024_17_49.csv'
+
 # Potential features and improvements
-#################################################################################################
 - Audit log: log in an append only file all the changes that are being made. This audit log
   should be created in the directory specified when the script runs.
 
