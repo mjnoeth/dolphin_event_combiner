@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <DolphinWirelessTimingSystem>Dolphin Wireless Timing System Current Settings File Version 1.0</DolphinWirelessTimingSystem>
+  <General>
+    <AutoPrint>False</AutoPrint>
+    <TCPIPPortIndex>0</TCPIPPortIndex>
+    <TwelveHourClock>False</TwelveHourClock>
+    <ScoreboardEnabled>False</ScoreboardEnabled>
+    <ScoreboardOrder>ORDER_BY_LANE</ScoreboardOrder>
+    <ScoreboardLines>1</ScoreboardLines>
+    <LanesInPool>1</LanesInPool>
+    <ScoreboardScrollDelay>7</ScoreboardScrollDelay>
+    <LogFileDirectory>C:\CTSDolphin\meets\20240630-test</LogFileDirectory>
+    <CurrentFilePath>C:\CTSDolphin\meets\deleteme</CurrentFilePath>
+    <LogXMLFiles>False</LogXMLFiles>
+    <LogD03Files>False</LogD03Files>
+    <LogD04Files>False</LogD04Files>
+    <LogTextFiles>False</LogTextFiles>
+    <LogCSVFiles>True</LogCSVFiles>
+    <ShowDqColumn>False</ShowDqColumn>
+    <ShowEmptyColumn>False</ShowEmptyColumn>
+    <ManuallyIncrementEvents>False</ManuallyIncrementEvents>
+    <MeetNumber>6</MeetNumber>
+  </General>
+</Data>
