@@ -14,7 +14,25 @@ into Meet Maestro for both the girls event AND the boys event then the appropria
 be populated.
 
 # Usage
-TODO: fill in actual steps to use
+- Data Manager: Ensure that events / heats you want to combine do not have overlapping swimmers
+- Starter: Starts the race normally
+- Timers: Time the race normally
+- Starter: Presses stop followed by reset normally
+- Data Manager: Loads first event normally (will see "Loaded times for empty lanes X, Y, Z")
+- Data Manager: Runs event combiner binary:
+
+C:\CTSDolphin\meets\20240630-test>python c:\Users\test\dolphin_event_combiner\combine.py --directory ./
+Using directory at './/'
+Using current race '007_Event_1_Heat_1_Race_1_7_8_2024_11_7.csv'
+Generating next race '007_Event_2_Heat_1_Race_2_7_8_2024_11_7.csv'
+
+- Data Manager: Loads second event from copied file  (will see "Loaded times for empty lanes X, Y, Z")
+- Starter / Data Manager advance event manually in Dolphin:
+  - Starter presses start on starter
+  - Someone on timer presses plunger to stop timing
+  - Starter presses stop followed by reset
+  - A file will be generated that will only have 1 time in it that can be ignored
+- Data Manager: Confirm that we have advanced past the 2nd event we have combined
 
 parameters:
 -d | --directory: Dolphin data directory
